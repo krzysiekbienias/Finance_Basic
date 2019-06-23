@@ -56,7 +56,7 @@ class BondDefiner(SetUpSchedule):
 if __name__ == '__main__':
     bond_obj = BondDefiner(valuation_date='2019-06-20',
                            termination_date='2025-06-20',
-                           tenor=ql.Period(ql.Semiannual),
+                           schedule_freq='Annual',
                            # Daily,Monthly,Quarterly,Annual,Semiannual,Bimonthly,Monthly
                            # without arguments it takes valuation_date and termination_date
                            calendar=ql.Poland(),
@@ -66,7 +66,7 @@ if __name__ == '__main__':
                            end_of_month=False,
                            convention='ActualActual',
                            ##################################
-                           annual_ytm_rate=0.076,
+                           annual_ytm_rate=0.075,
                            face_value=1000,
                            coupon_rate=0.08,
                            coupon_value=50,

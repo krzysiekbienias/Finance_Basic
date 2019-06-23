@@ -51,10 +51,11 @@ class CalendarBoost(): #laverege from QuantLib
 
 
 class SetUpSchedule():
-    def __init__(self,valuation_date,termination_date,tenor,calendar,business_convention,termination_business_convention,date_generation,end_of_month,convention):
+    def __init__(self,valuation_date,termination_date,calendar,business_convention,termination_business_convention,date_generation,end_of_month,convention,schedule_freq):
         self._svaluation_date=valuation_date
         self._stermination_date=termination_date
-        self._qlperiod_tenor=tenor
+        self._s_schedule_freq = schedule_freq
+
         self._ql_calendar=calendar
         self._s_business_convention=business_convention
         self._ql_termination_business_convention=termination_business_convention
@@ -64,9 +65,12 @@ class SetUpSchedule():
         self.m_ql_valuation_date=self.convert_string_into_ql_object(date=self._svaluation_date)
         self.m_ql_termination_date = self.convert_string_into_ql_object(date=self._stermination_date)
         self.m_day_count=self.set_days_convention(give_name=self.s_days_conv)
+        self.mql_period_frequency = self.set_scedule_frequency()
         self.m_schedule=self.get_schedule()
         self.ml_dates=self.get_list_of_dates()
         self.ml_yf=self.consecutive_year_fractions()
+
+
 
 
 
@@ -94,18 +98,38 @@ class SetUpSchedule():
             day_count = ql.Business252()
             return day_count
 
+    def set_scedule_frequency(self):
+        if self._s_schedule_freq=="Daily":
+            return ql.Period(ql.Daily)
+        if self._s_schedule_freq=="Weekly":
+            return ql.Period(ql.Weekly)
+        if self._s_schedule_freq=="Monthly":
+            return ql.Period(ql.Monthly)
+        if self._s_schedule_freq=="Quarterly":
+            return ql.Period(ql.Quarterly)
+        if self._s_schedule_freq=="Semiannual":
+            return ql.Period(ql.Semiannual)
+        if self._s_schedule_freq=="Annual":
+            return ql.Period(ql.Annual)
+        if self._s_schedule_freq=="Two Dates":
+            return ql.Period()
+
+
+
+
+
+
 
     def get_schedule(self):
             return ql.Schedule(
                 self.m_ql_valuation_date,
                 self.m_ql_termination_date,
-                self._qlperiod_tenor,
+                self.mql_period_frequency,
                 self._ql_calendar,
                 self._s_business_convention,
                 self._ql_termination_business_convention,
                 self._ql_date_generation,
-                self._b_end_of_month
-            )
+                self._b_end_of_month)
 
     def get_list_of_dates(self):
         return list(self.m_schedule)
@@ -121,14 +145,15 @@ class SetUpSchedule():
 
 if __name__ == '__main__':
     set_up_schedule=SetUpSchedule(valuation_date='2019-06-20',
-                                    termination_date = '2019-06-30',
-                                    tenor = ql.Period(ql.Annual),#Daily,Monthly,Quarterly
+                                    termination_date = '2020-06-20',
+                                    schedule_freq='Monthly',#Daily,Monthly,Quarterly
                                     calendar = ql.Poland(),
                                     business_convention = ql.Following,#TODO Find out what does it mean. It is int =0
                                     termination_business_convention=ql.Following,
                                     date_generation = ql.DateGeneration.Forward,
                                     end_of_month = False,
-                                  convention='ActualActual')
+                                  convention='ActualActual',
+                                  )
 
 
 
