@@ -1,129 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6968d84-1ac2-4b7e-9321-5754007d27f9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/app_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/base_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_cfg/bonds.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_cfg/valueAtRisk.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/CalendarManagment/calendar_ql_supported.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/ExcelUtils/excelUtils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/PlotKit/plotCreator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/common_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/config/db_cfg.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/config/logging_cfg.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/dataProvider/get_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/db_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/files_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logging_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/os_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/sql_connector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e6968d84-1ac2-4b7e-9321-5754007d27f9" name="Default" comment="upgrade">
+      <change afterPath="$PROJECT_DIR$/HelperFiles/~$bondConstructor.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/quantLibUtil.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonds.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/bonds/bonds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar_ql_supported.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rates.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/rates/rates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/orig-prefix.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip-18.1.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip-18.1.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_internal/configuration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/big5freq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/chardistribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/charsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/escsm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/jisfreq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/jpcntx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langgreekmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/langturkishmodel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/latin1prober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/chardet/universaldetector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/colorama/win32.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/colorama/winterm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/_backport/tarfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/markers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/t32.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/t64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/w32.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/distlib/w64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_ihatexml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/_tokenizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/dom.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/pidlockfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/lockfile/sqlitelockfile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/retrying.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/contrib/socks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/ordered_dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/packages/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/urllib3/util/timeout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/labels.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pip/_vendor/webencodings/x_user_defined.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/_vendor/appdirs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/markers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/requirements.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/specifiers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/_vendor/packaging/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/pkg_resources/_vendor/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools-40.6.3.dist-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools-40.6.3.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools-40.6.3.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/markers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/requirements.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/specifiers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/_vendor/packaging/version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/_vendor/pyparsing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/_vendor/six.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/archive_util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/cli-32.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/cli-64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/cli.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/bdist_egg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/build_clib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/build_py.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/install.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/launcher manifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/py36compat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/sdist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/setopt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/command/upload_docs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/gui-32.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/gui-64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/gui.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/sandbox.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/setuptools/ssl_support.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/wheel-0.32.3.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/wheel-0.32.3.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/wheel-0.32.3.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site-packages/wheel/cli/convert.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bonds/bonds.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/bonds/bonds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/CalendarManagment/calendar_ql_supported.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/CalendarManagment/calendar_ql_supported.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,34 +25,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
   <component name="ProjectId" id="1R5oH2d2OEv30X0yTdwl4mOqNDn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/apps" />
+      <recent name="$PROJECT_DIR$/run_cfg" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/bonds" />
       <recent name="$PROJECT_DIR$/apps/rates" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/apps" />
-      <recent name="$PROJECT_DIR$/run_cfg" />
-      <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.bonds">
+  <component name="RunManager" selected="Python.main">
     <configuration name="bonds" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Finance_Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,6 +94,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Finance_Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="--APP_NAME=BONDS --APP_PARAMS RUN_CFG=$PROJECT_DIR$/run_cfg/bonds.yaml" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="rates" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Bonds" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,8 +136,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.bonds" />
+      <item itemvalue="Python.calendar_ql_supported" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.rates" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.bonds" />
         <item itemvalue="Python.calendar_ql_supported" />
         <item itemvalue="Python.rates" />
@@ -257,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561277667137</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="upgrade">
+      <created>1602956938132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602956938132</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,11 +192,74 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/Bonds" />
     </ignored-roots>
     <MESSAGE value="upgrade" />
     <option name="LAST_COMMIT_MESSAGE" value="upgrade" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1498" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603014271878">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state x="-1498" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603014271878" />
+    <state x="-1517" y="171" key="#xdebugger.evaluate" timestamp="1603034011825">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state x="-1517" y="171" key="#xdebugger.evaluate/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603034011825" />
+    <state x="-1783" y="37" key="CommitChangelistDialog2" timestamp="1602956937208">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state x="-1783" y="37" key="CommitChangelistDialog2/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1602956937208" />
+    <state width="2539" height="427" key="GridCell.Tab.0.bottom" timestamp="1603035008031">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="427" key="GridCell.Tab.0.bottom/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603035008031" />
+    <state width="2539" height="518" key="GridCell.Tab.0.bottom/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027868599" />
+    <state width="2539" height="427" key="GridCell.Tab.0.center" timestamp="1603035008029">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="427" key="GridCell.Tab.0.center/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603035008029" />
+    <state width="2539" height="518" key="GridCell.Tab.0.center/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027868598" />
+    <state width="2539" height="427" key="GridCell.Tab.0.left" timestamp="1603035008028">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="427" key="GridCell.Tab.0.left/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603035008028" />
+    <state width="2539" height="518" key="GridCell.Tab.0.left/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027868597" />
+    <state width="2539" height="427" key="GridCell.Tab.0.right" timestamp="1603035008030">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="427" key="GridCell.Tab.0.right/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603035008030" />
+    <state width="2539" height="518" key="GridCell.Tab.0.right/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027868599" />
+    <state width="2539" height="518" key="GridCell.Tab.1.bottom" timestamp="1603034562594">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="518" key="GridCell.Tab.1.bottom/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603034562594" />
+    <state width="2539" height="518" key="GridCell.Tab.1.bottom/0.23.1440.837/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603016462600" />
+    <state width="2539" height="518" key="GridCell.Tab.1.bottom/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027876860" />
+    <state width="2539" height="518" key="GridCell.Tab.1.center" timestamp="1603034562592">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="518" key="GridCell.Tab.1.center/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603034562592" />
+    <state width="2539" height="518" key="GridCell.Tab.1.center/0.23.1440.837/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603016462598" />
+    <state width="2539" height="518" key="GridCell.Tab.1.center/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027876858" />
+    <state width="2539" height="518" key="GridCell.Tab.1.left" timestamp="1603034562591">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="518" key="GridCell.Tab.1.left/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603034562591" />
+    <state width="2539" height="518" key="GridCell.Tab.1.left/0.23.1440.837/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603016462597" />
+    <state width="2539" height="518" key="GridCell.Tab.1.left/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027876857" />
+    <state width="2539" height="518" key="GridCell.Tab.1.right" timestamp="1603034562593">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="518" key="GridCell.Tab.1.right/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603034562593" />
+    <state width="2539" height="518" key="GridCell.Tab.1.right/0.23.1440.837/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603016462599" />
+    <state width="2539" height="518" key="GridCell.Tab.1.right/0.23.1440.877/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1603027876859" />
+    <state x="-1680" y="201" key="Vcs.Push.Dialog.v2" timestamp="1602956955092">
+      <screen x="-2560" y="-259" width="2560" height="1440" />
+    </state>
+    <state x="-1680" y="201" key="Vcs.Push.Dialog.v2/0.0.1440.900/-2560.-259.2560.1440@-2560.-259.2560.1440" timestamp="1602956955092" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -303,8 +285,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/apps/bonds/bonds.py</url>
-          <line>80</line>
+          <line>76</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/CalendarManagment/calendar_ql_supported.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/CalendarManagment/calendar_ql_supported.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

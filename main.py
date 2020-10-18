@@ -25,9 +25,9 @@ if __name__=="__main__":
     main(user_opts.app_name)
 
 """
---APP_NAME=VALUE_AT_RISK
+--APP_NAME=BONDS
 --APP_PARAMS
-RUN_CFG=/Users/krzysiekbienias/Documents/GitHub/Portfolio_Theorem/run_cfg/valueAtRisk.yaml
+RUN_CFG=/Users/krzysiekbienias/Documents/GitHub/Finance_Basic/run_cfg/bonds.yaml
 """
 
     # # quandConnector=QuandlProvider(tickers=['AAPL', 'MSFT', 'GOOG', 'WMT'],startDate='2015-01-01',
