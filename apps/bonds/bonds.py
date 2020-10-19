@@ -9,6 +9,9 @@ from utils.PlotKit.plotCreator import PlotFinanceGraphs
 
 logger=l_util.get_logger(__name__)
 
+
+
+
 class BondDefiner(SetUpSchedule):
     def __init__(self, valuation_date, termination_date,calendar,convention,schedule_freq, business_convention,
                  termination_business_convention, date_generation, end_of_month, annual_ytm_rate, face_value,
@@ -25,11 +28,8 @@ class BondDefiner(SetUpSchedule):
         self.mf_nominal_rate = self.get_nominal_rate()
         self.m_price_from_ytm = self.bond_price_using_ytm()
 
-
-
-
-
     def get_nominal_rate(self):
+        nom_rate=0
         if self._s_frequency == 'Annual':
             nom_rate = self._annual_ytm_rate
         elif self._s_frequency == 'Semiannual':
@@ -55,6 +55,9 @@ class BondDefiner(SetUpSchedule):
             price.append(temp)
         return sum(price) + (self._face_value + self.mf_cupon_value) / (1 + self.mf_nominal_rate) ** (numb_of_tenor - 1)
 
+    # def zero_coupon_bonds(self):
+    #     zc=self._face_value/(1+self.mf_nominal_rate)**5
+
 class BondsRun(BaseApp):
         def __init__(self, **app_params):
             app_name = 'bond'
@@ -73,6 +76,18 @@ class BondsRun(BaseApp):
             self.controlFileBonds=self.dictionaryOfControlFile[self._tab_name1]
             self.qlConverter=QuantLibConverter(calendar=self.controlFileBonds.loc[4,'Value'])
 
+            calendar_object=SetUpSchedule(valuation_date=self.controlFileBonds.loc[0,'Value'],
+                                 termination_date=self.controlFileBonds.loc[1,'Value'],
+                                 schedule_freq=self.controlFileBonds.loc[2,'Value'],
+                                 calendar=self.qlConverter.mqlCalendar,
+                                 convention=self.controlFileBonds.loc[3,'Value'],
+                                 end_of_month=self.controlFileBonds.loc[8, 'Value'],
+                                 business_convention=self.qlConverter.mqlBusinessConvention,
+                                 termination_business_convention=self.qlConverter.mqlTerminationBusinessConvention,
+                                          date_generation=self.qlConverter.mqlDateGeneration)
+
+
+
 
             bond_obj=BondDefiner(valuation_date=self.controlFileBonds.loc[0,'Value'],
                                  termination_date=self.controlFileBonds.loc[1,'Value'],
@@ -82,14 +97,14 @@ class BondsRun(BaseApp):
                                  end_of_month=self.controlFileBonds.loc[8, 'Value'],
                                  business_convention=self.qlConverter.mqlBusinessConvention,
                                  termination_business_convention=self.qlConverter.mqlTerminationBusinessConvention,
-                                 date_generation=ql.DateGeneration.Forward,
+                                 date_generation=self.qlConverter.mqlDateGeneration,
                                  annual_ytm_rate=self.controlFileBonds.loc[0,'Bond Value'],
                                  face_value=self.controlFileBonds.loc[1,'Bond Value'],
                                  coupon_rate=self.controlFileBonds.loc[2,'Bond Value'],
                                  coupon_values=self.controlFileBonds.loc[3,'Bond Value'],
                                  frequency=self.controlFileBonds.loc[4,'Bond Value'])
 
-            logger.info('Bond Object has been created')
+            logger.info('Bond Object has been created.')
 
 
 
