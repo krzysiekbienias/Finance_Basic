@@ -40,6 +40,9 @@ class BondDefiner(SetUpSchedule):
             nom_rate = self._annual_ytm_rate / 12
         return nom_rate
 
+    def zero_coupn_bond(self):
+        return (self._face_value/(1+self._annual_ytm_rate))**self.ml_yf[0]
+
     def get_coupon_value(self):
         if self._coupon_value != None:
             coupon = self._coupon_value
@@ -86,8 +89,7 @@ class BondsRun(BaseApp):
                                  termination_business_convention=self.qlConverter.mqlTerminationBusinessConvention,
                                           date_generation=self.qlConverter.mqlDateGeneration)
 
-
-
+            logger.info('Bond object has been created')
 
             bond_obj=BondDefiner(valuation_date=self.controlFileBonds.loc[0,'Value'],
                                  termination_date=self.controlFileBonds.loc[1,'Value'],
@@ -104,7 +106,18 @@ class BondsRun(BaseApp):
                                  coupon_values=self.controlFileBonds.loc[3,'Bond Value'],
                                  frequency=self.controlFileBonds.loc[4,'Bond Value'])
 
-            logger.info('Bond Object has been created.')
+            logger.info('Bond object has been created')
+            #############################-----ZERO COUPON BONDS-----###############################
+            logger.info(f' Zero coupon Bonds is has at {calendar_object._svaluation_date}')
+            logger.info(f' Zero coupon Bonds matures at {calendar_object._stermination_date}')
+            logger.info(f' Annual rate is equal at {bond_obj.mf_nominal_rate}')
+            logger.info(f' The bond matures for  {bond_obj.ml_yf}')
+            logger.info(f' The face value of bond is equal;  {bond_obj._face_value}')
+            logger.info(f' The price of the bond is equal {bond_obj.zero_coupn_bond()}')
+
+
+
+
 
 
 
