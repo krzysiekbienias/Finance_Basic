@@ -41,7 +41,7 @@ class BondDefiner(SetUpSchedule):
         return nom_rate
 
     def zero_coupn_bond(self):
-        return (self._face_value/(1+self._annual_ytm_rate))**self.ml_yf[0]
+        return (self._face_value/(1+self._annual_ytm_rate)**self.ml_yf[0])
 
     def get_coupon_value(self):
         if self._coupon_value != None:
